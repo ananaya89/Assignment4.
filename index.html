@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        
+    </style>
+</head>
+<body>
+    <p>Click the following button to access</p>
+    <form>
+        <input type="button" onclick="login()" value="LOGIN">
+    </form>
+    <script type="text/javascript">
+        function login(){
+            let location = prompt("Enter your location");
+            let name = prompt("Please enter your Username");
+            let password = prompt("Please enter your password");
+
+            if (password !== "123") {
+                alert("Wrong password");
+            } else {
+                let confirmValue = confirm("You can go ahead");
+                if (confirmValue) {
+                    window.location.href='map.html';
+                    alert("Welcome");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
